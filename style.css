@@ -16,7 +16,7 @@ body {
 
 h1, h2 {
   margin-bottom: 0.5em;
-  color: #0a3161;
+  color: #1D2078; /* RCCG Blue */
 }
 
 p {
@@ -25,7 +25,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #0a3161;
+  color: #1D2078;
 }
 
 .container {
@@ -53,7 +53,7 @@ a {
 
 .btn {
   padding: 0.75rem 1.5rem;
-  background-color: #0a3161;
+  background-color: #1D2078; /* RCCG Blue */
   color: white;
   border: none;
   border-radius: 5px;
@@ -62,11 +62,11 @@ a {
 }
 
 .btn:hover {
-  background-color: #042147;
+  background-color: #0A8A2A; /* RCCG Green */
 }
 
 .btn-secondary {
-  background-color: #555;
+  background-color: #D6241D; /* RCCG Red */
 }
 
 .section {
@@ -90,6 +90,7 @@ a {
   border-radius: 8px;
   text-align: center;
   font-weight: bold;
+  border: 2px solid #1D2078;
 }
 
 .sermon-video iframe {
@@ -103,7 +104,7 @@ blockquote {
   font-style: italic;
   color: #555;
   margin: 1rem 0;
-  border-left: 4px solid #0a3161;
+  border-left: 4px solid #1D2078;
   padding-left: 1rem;
 }
 
@@ -120,27 +121,27 @@ blockquote {
 
 .events-list li::before {
   content: "•";
-  color: #0a3161;
+  color: #0A8A2A; /* RCCG Green */
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .footer {
-  background-color: #0a3161;
+  background-color: #1D2078; /* RCCG Blue */
   color: white;
   text-align: center;
   padding: 2rem;
 }
 
 .footer a {
-  color: #fff799;
+  color: #FFFFFF;
   font-weight: bold;
 }
 
 .link {
   display: inline-block;
   margin-top: 1rem;
-  color: #0a3161;
+  color: #D6241D; /* RCCG Red */
   font-weight: bold;
 }
