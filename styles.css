@@ -1,0 +1,146 @@
+/* style.css for Later House Assembly */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+  color: #0a3161;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #0a3161;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') center/cover;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #0a3161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #042147;
+}
+
+.btn-secondary {
+  background-color: #555;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.section.alt {
+  background-color: #f9f9f9;
+}
+
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ministry {
+  background: #e6f0ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sermon-video iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 1rem 0;
+  border-left: 4px solid #0a3161;
+  padding-left: 1rem;
+}
+
+.events-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.events-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.events-list li::before {
+  content: "•";
+  color: #0a3161;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.footer {
+  background-color: #0a3161;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer a {
+  color: #fff799;
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0a3161;
+  font-weight: bold;
+}
