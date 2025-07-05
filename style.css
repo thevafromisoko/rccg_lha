@@ -66,7 +66,7 @@ a {
 }
 
 .btn-secondary {
-  background-color: #D6241D; /* RCCG Red */
+  background-color: #0A8A2A; /* RCCG Green */
 }
 
 .section {
@@ -144,4 +144,12 @@ blockquote {
   margin-top: 1rem;
   color: #D6241D; /* RCCG Red */
   font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
 }
