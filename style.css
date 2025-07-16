@@ -1,4 +1,4 @@
-/* style.css for Latter House Assembly */
+/* style.css for Later House Assembly */
 
 /* General Reset */
 * {
@@ -8,7 +8,13 @@
 }
 html, body {
   overflow-x: hidden;
+}
+
+html {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #fff;
@@ -27,10 +33,6 @@ p {
 a {
   text-decoration: none;
   color: #1D2078;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #0A8A2A;
 }
 
 .container {
@@ -40,21 +42,15 @@ a:hover {
 }
 
 /* Logo styling */
-.logo, .logo-small {
-  background: #ffffff;
+.logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  background: white;
   border-radius: 50%;
   padding: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  height: auto;
-}
-.logo {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto 1rem;
-}
-.logo-small {
-  max-width: 60px;
-  margin: 0;
 }
 
 /* Navbar */
@@ -72,6 +68,17 @@ a:hover {
   justify-content: space-between;
 }
 
+.logo-small {
+  max-width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  background: #28166F;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -81,6 +88,7 @@ a:hover {
 .nav-links li a {
   color: #ffffff;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
@@ -111,7 +119,7 @@ a:hover {
   border: none;
   border-radius: 5px;
   margin-right: 1rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 .btn:hover {
@@ -119,7 +127,7 @@ a:hover {
 }
 
 .btn-secondary {
-  background-color: #0A8A2A;
+  background-color: #0A8A2A; /* RCCG Green */
 }
 
 .section {
@@ -181,7 +189,7 @@ blockquote {
 }
 
 .footer {
-  background-color: #1D2078;
+  background-color: #1D2078; /* RCCG Blue */
   color: white;
   text-align: center;
   padding: 2rem;
@@ -197,40 +205,4 @@ blockquote {
   margin-top: 1rem;
   color: #D6241D; /* RCCG Red */
   font-weight: bold;
-}
-
-/* Back to Top */
-.back-to-top {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background-color: #1D2078;
-  color: white;
-  padding: 0.5rem 0.75rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  display: none;
-  z-index: 1000;
-}
-
-.back-to-top:hover {
-  background-color: #0A8A2A;
-}
-
-/* Show on scroll */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .navbar .container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .back-to-top {
-    display: block;
-  }
 }
