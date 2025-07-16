@@ -71,6 +71,12 @@ a {
 .logo-small {
   max-width: 60px;
   height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  background: white;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
