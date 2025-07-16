@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
@@ -34,6 +38,42 @@ a {
   padding: 2rem;
 }
 
+/* Navbar */
+.navbar {
+  background-color: #1D2078;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-small {
+  max-width: 60px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #0A8A2A; /* RCCG Green */
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') center/cover;
@@ -41,18 +81,6 @@ a {
   padding: 6rem 2rem;
   text-align: center;
 }
-
-.logo {
-  max-width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem;
-  background: white;
-  border-radius: 50%;
-  padding: 6px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
 
 .hero h1 {
   font-size: 2.5rem;
